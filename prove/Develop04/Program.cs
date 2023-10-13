@@ -5,20 +5,6 @@ using System.IO;
 
 class Program
 {
-    static List<string> prompts = new List<string>
-    {
-        "Who was the most interesting person you interacted with today?",
-        "What was the best part of my day?",
-        "How did I see the hand of the Lord in my life today?",
-        "What was the strongest emotion I felt today?",
-        "If I could do one thing today, what would it be?",
-        "How did I spend time with my family today?",
-        "Write something you could learn from the scriptures today"
-    };
-
-    static List<string> diaryEntries = new List<string>();
-    static string responsesFileName = "journal.txt";
-    
     static void Main()
     {
       Console.WriteLine("Welcome to the Journal Program!");
@@ -57,7 +43,20 @@ class Program
             }
         }
     }
+     static List<string> prompts = new List<string>
+    {
+        "Who was the most interesting person you interacted with today?",
+        "What was the best part of my day?",
+        "How did I see the hand of the Lord in my life today?",
+        "What was the strongest emotion I felt today?",
+        "If I could do one thing today, what would it be?",
+        "How did I spend time with my family today?",
+        "Write something you could learn from the scriptures today"
+    };
 
+    static List<string> diaryEntries = new List<string>();
+    static string responsesFileName = "journal.txt";
+    
     static void WriteNewEntry()
     {
         Random random = new Random();
